@@ -1,0 +1,134 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.kno.app" xmlns:tools="http://schemas.android.com/tools">
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+ 
+  
+
+
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="https" />
+    </intent>
+
+     <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="hinge" />
+  </intent>
+
+   <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="feeld" />
+  </intent>
+
+
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="tinder" />
+  </intent>
+
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="cmb" />
+  </intent>
+
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="bumble" />
+  </intent>
+
+  <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="okcupid" />
+  </intent>
+
+    <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="grindr" />
+  </intent>
+
+    <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="hud"  />
+  </intent>
+
+   <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="blk" />
+  </intent>
+
+     <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="pof" />
+  </intent>
+
+   <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="hily" />
+  </intent>
+
+    <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="happn" />
+  </intent>
+
+   <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="pure" />
+  </intent>
+
+    <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="her" />
+  </intent>
+
+    <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="zoe" />
+  </intent>
+
+    <intent>
+    <action android:name="android.intent.action.VIEW" />
+    <data android:scheme="ashleymadison" />
+  </intent>
+
+  </queries>
+  <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+  <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_notification" />
+    <meta-data android:name="expo.modules.updates.ENABLED" android:value="true"/>
+    <meta-data android:name="expo.modules.updates.EXPO_SDK_VERSION" android:value="48.0.0"/>
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ALWAYS"/>
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="0"/>
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATE_URL" android:value="https://exp.host/@yogeshosplabs/kno"/>
+    <activity android:name=".MainActivity" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize" android:theme="@style/Theme.App.SplashScreen" android:exported="true" android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="kno"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>
+    <activity
+  android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+  android:noHistory="true">
+  <intent-filter>
+    <data android:scheme="tagmanager.c.com.kno.app" />
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE"/>
+  </intent-filter>
+</activity>
+    <service android:name="com.kno.HeadlessService" />
+    <!-- <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false" /> -->
+  </application>
+</manifest>

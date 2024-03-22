@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>842658485079-9ar7t6bi4tq8p74754nd27qt1jpnlvn7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.842658485079-9ar7t6bi4tq8p74754nd27qt1jpnlvn7</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>842658485079-lv5elrr22k68o4shaemco1hb02js1gef.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBcX8n8h0Vd_fRJm5yuI1u2sGWl-ZoYJ8E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>842658485079</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.kno.app</string>
+	<key>PROJECT_ID</key>
+	<string>knoco-dev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>knoco-dev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:842658485079:ios:7fd76defe4a741483b2412</string>
+</dict>
+</plist>
